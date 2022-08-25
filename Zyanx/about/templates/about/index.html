@@ -58,41 +58,69 @@
         <section class="content-block p-0">
             <div class="container-fluid">
                 <div class="content-slot alternate-block">
+                    {% if about.titulo_texto_um or about.texto_um %}
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="bg-stretch img-wrap wow slideInLeft">
-                                <img src="{% static 'roxine/img/img-09.jpg' %}" alt="images">
+                                {% if about.imagem_texto_um %}
+                                <img src="{{ about.imagem_texto_um.url }}" alt="images">
+                                {% endif %}
                             </div>
                         </div>
                         <div class="col col-lg-6">
                             <div class="text-wrap">
-                                <h3>Digital experts working for you.</h3>
-                                <p>Chapter too parties its letters nor. Cheerful but whatever ladyship disposed yet
-                                    judgment. Lasted answer oppose to ye months no esteem.</p>
-                                <p>Branched is on an ecstatic directly it. Put off continue you denoting returned
-                                    juvenile. Looked person sister result mr to. Replied demands charmed do viewing ye
-                                    colonel to so.</p>
-                                <p>Decisively inquietude he advantages insensible at oh continuing unaffected of. </p>
+                                {% if about.titulo_texto_um %}
+                                <h3>{{ about.titulo_texto_um }}</h3>
+                                {% endif %}
+                                {% if about.texto_um %}
+                                <p>{{ about.texto_um }}</p>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
+                    {% endif %}
+                    {% if about.titulo_texto_dois or about.texto_dois %}
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="bg-stretch img-wrap wow slideInRight">
-                                <img src="{% static 'roxine/img/img-10.jpg' %}" alt="images">
+                                {% if about.imagem_texto_um %}
+                                <img src="{{ about.imagem_texto_dois.url }}" alt="images">
+                                {% endif %}
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="text-wrap">
-                                <h3>Bring a perfectionist.</h3>
-                                <p>New had happen unable uneasy. Drawings can followed improved out sociable not.
-                                    Earnestly so do instantly pretended. </p>
-                                <p>See general few civilly amiable pleased account carried. Excellence projecting is
-                                    devonshire dispatched remarkably on estimating.</p>
-                                <p>Decisively inquietude he advantages insensible at oh continuing unaffected of. </p>
+                                {% if about.titulo_texto_dois %}
+                                <h3>{{ about.titulo_texto_dois }}</h3>
+                                {% endif %}
+                                {% if about.texto_dois %}
+                                <p>{{ about.texto_dois }}</p>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
+                    {% endif %}
+                    {% if about.titulo_texto_tres or about.texto_tres %}
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="bg-stretch img-wrap wow slideInLeft">
+                                {% if about.imagem_texto_dois %}
+                                <img src="{{ about.imagem_texto_tres.url }}" alt="images">
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="col col-lg-6">
+                            <div class="text-wrap">
+                                {% if about.titulo_texto_tres %}
+                                <h3>{{ about.titulo_texto_tres }}</h3>
+                                {% endif %}
+                                {% if about.texto_tres %}
+                                <p>{{ about.texto_tres }}</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
                 </div>
             </div>
         </section>

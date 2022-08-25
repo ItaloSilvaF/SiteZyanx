@@ -16,7 +16,7 @@ class Home(models.Model):
     publicado_pagina = models.BooleanField(
         verbose_name='Publicado', default=False)
     imagem_pagina = models.ImageField(
-        upload_to='imagens_paginas/', blank=True, null=True, verbose_name='Background')
+        upload_to='imagens_home/', blank=True, null=True, verbose_name='Background')
     titulo_quadrado_um = models.CharField(
         max_length=50, verbose_name='Título do quadrado 1', blank=True, null=True, default='sem titulo')
     descricao_quadrado_um = models.TextField(
