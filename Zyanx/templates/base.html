@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Multi-Purpose Creative Agency HTML5 Template - Roxine</title>
+    {% block titulo_da_guia %} {% endblock %}
     <!-- Font Icons -->
     <link media="all" rel="stylesheet" href="{% static 'roxine/css/fonts/icomoon/icomoon.css' %}">
     <link media="all" rel="stylesheet" href="{% static 'roxine/css/fonts/roxine-font-icon/roxine-font.css' %}">
@@ -67,7 +67,7 @@
                                             data-title="Home"> Home </a>
                                     </li>
                                     <li>
-                                        <a href="{% url 'about' %}"> About </a>
+                                        <a href="{% url 'about' %}"> Sobre Nós </a>
                                     </li>
                                 </ul>
                             </div>
@@ -93,7 +93,7 @@
                             <div class="footer-nav inline-nav text-center">
                                 <ul>
                                     <li><a href="{% url 'home' %}">Home</a></li>
-                                    <li><a href="{% url 'about' %}">About</a></li>
+                                    <li><a href="{% url 'about' %}">Sobre Nós</a></li>
                                 </ul>
                             </div>
                         </div>

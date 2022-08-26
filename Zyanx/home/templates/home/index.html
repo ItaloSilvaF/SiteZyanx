@@ -1,8 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block conteudo %}
+{% block titulo_da_guia %}
+<title> Zyanx </title>
+{% endblock %}
 
+{% block conteudo %}
 {% for home in valores %}
 <main>
     <!-- visual/banner of the page -->
@@ -210,5 +213,4 @@
     <!--/main content wrapper -->
 </main>
 {% endfor %}
-
 {% endblock %}

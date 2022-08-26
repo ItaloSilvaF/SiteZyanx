@@ -1,8 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block conteudo %}
+{% block titulo_da_guia %}
+<title> Zyanx | Sobre Nós </title>
+{% endblock %}
 
+{% block conteudo %}
 {% for about in valores %}
 <!--/header of the page -->
 <main>
@@ -128,5 +131,4 @@
     <!--/main content wrapper -->
 </main>
 {% endfor %}
-
 {% endblock %}
